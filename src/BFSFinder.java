@@ -15,7 +15,7 @@ public class BFSFinder {
         map = new int[pb.m_x][pb.m_y];
         for(int ii=0;ii<pb.m_y;ii++){
             for(int jj=0;jj<pb.m_x;jj++){
-                if(pb.map[jj][ii]>0 && pb.map[jj][ii]<26){
+                if(pb.map[jj][ii]>0 && pb.map[jj][ii]<30){
                     map[jj][ii] = 1;
                 }else{
                     map[jj][ii] = 0;
