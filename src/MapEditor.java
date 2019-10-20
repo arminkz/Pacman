@@ -119,7 +119,7 @@ public class MapEditor extends JFrame {
                 map[i][j] = 23;
             }
             if(c == 'Y'){
-                map[i][j] = 26;
+                map[i][j] = 30;
             }
             if(c == '_'){
                 map[i][j] = 0;

@@ -155,7 +155,7 @@ public abstract class Ghost {
                         if(pixelPosition.x >= (parentBoard.m_x-1) * 28){
                             return;
                         }
-                        if((logicalPosition.x+1 < parentBoard.m_x) && (parentBoard.map[logicalPosition.x+1][logicalPosition.y]>0) && ((parentBoard.map[logicalPosition.x+1][logicalPosition.y]<26)||isPending)){
+                        if((logicalPosition.x+1 < parentBoard.m_x) && (parentBoard.map[logicalPosition.x+1][logicalPosition.y]>0) && ((parentBoard.map[logicalPosition.x+1][logicalPosition.y]<30)||isPending)){
                             return;
                         }
                         pixelPosition.x ++;
@@ -164,7 +164,7 @@ public abstract class Ghost {
                         if(pixelPosition.x <= 0){
                             return;
                         }
-                        if((logicalPosition.x-1 >= 0) && (parentBoard.map[logicalPosition.x-1][logicalPosition.y]>0) && ((parentBoard.map[logicalPosition.x-1][logicalPosition.y]<26)||isPending)){
+                        if((logicalPosition.x-1 >= 0) && (parentBoard.map[logicalPosition.x-1][logicalPosition.y]>0) && ((parentBoard.map[logicalPosition.x-1][logicalPosition.y]<30)||isPending)){
                             return;
                         }
                         pixelPosition.x --;
@@ -173,7 +173,7 @@ public abstract class Ghost {
                         if(pixelPosition.y <= 0){
                             return;
                         }
-                        if((logicalPosition.y-1 >= 0) && (parentBoard.map[logicalPosition.x][logicalPosition.y-1]>0) && ((parentBoard.map[logicalPosition.x][logicalPosition.y-1]<26)||isPending)){
+                        if((logicalPosition.y-1 >= 0) && (parentBoard.map[logicalPosition.x][logicalPosition.y-1]>0) && ((parentBoard.map[logicalPosition.x][logicalPosition.y-1]<30)||isPending)){
                             return;
                         }
                         pixelPosition.y--;
@@ -182,7 +182,7 @@ public abstract class Ghost {
                         if(pixelPosition.y >= (parentBoard.m_y-1) * 28){
                             return;
                         }
-                        if((logicalPosition.y+1 < parentBoard.m_y) && (parentBoard.map[logicalPosition.x][logicalPosition.y+1]>0) && ((parentBoard.map[logicalPosition.x][logicalPosition.y+1]<26)||isPending)){
+                        if((logicalPosition.y+1 < parentBoard.m_y) && (parentBoard.map[logicalPosition.x][logicalPosition.y+1]>0) && ((parentBoard.map[logicalPosition.x][logicalPosition.y+1]<30)||isPending)){
                             return;
                         }
                         pixelPosition.y ++;

@@ -111,9 +111,9 @@ public class PacBoard extends JPanel{
         setSize(20*m_x,20*m_y);
         setBackground(Color.black);
 
-        mapSegments = new Image[28];
+        mapSegments = new Image[31];
         mapSegments[0] = null;
-        for(int ms=1;ms<28;ms++){
+        for(int ms=1;ms<31;ms++){
             try {
                 mapSegments[ms] = ImageIO.read(this.getClass().getResource("resources/images/map segments/"+ms+".png"));
             }catch(Exception e){}
